@@ -6,6 +6,7 @@
     font-family: Arial;
     margin: 10;
     background-color: black;
+    flex-wrap: wrap;
   }
 .pre {
     text-align: center;
@@ -17,6 +18,7 @@
     flex-wrap: wrap;
     margin-top: 2%;
     background-color: white;
+    height: 110vh;
   }
   
   .main-header {
@@ -25,15 +27,20 @@
     padding: 60px;
     background: #5aa2e5;
     color: #fff;
+    flex-wrap: wrap;
   }
   
   .card {
-    flex: 1 0 200px;
+    display: flex;
+    /* flex: 1 0 200px; */
     padding: 10px;
     text-align: center;
     border-style: dashed;
     border-width: 5px;
     margin: 50px;
+    flex-wrap: wrap;
+    max-width: 60%;
+    min-width: 60%;
   }
   
   .card header {
@@ -45,5 +52,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .linear-gradient-background {
+    background-image: linear-gradient(
+      rgba(56, 109, 244, 0.3) 0%,
+      rgba(119, 189, 255, 0.6) 100%
+    );
+  }
+  .aside {
+    float: left;
+    margin: 50px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 96%;
+    border-style: dashed;
+    border-width: 5px;
   }
   

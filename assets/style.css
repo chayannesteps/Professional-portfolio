@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+  /* main font and size */
   body {
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
@@ -9,11 +9,6 @@
     background-color: black;
     flex-wrap: wrap;
   }
-  .pre {
-    text-align: left;
-    padding: 50px;
-  }
-  
   main {
     display: flex;
     flex-wrap: wrap;
@@ -31,12 +26,12 @@
     color: #fff;
     flex-wrap: wrap;
   }
-  
+  /* main boxes */
   .card {
     display: flex;
-    flex: 1 0 200px;
+    /* flex: 1 0 200px; */
     padding: 10px;
-    text-align: left;
+    /* text-align: left; */
     border-style: dashed;
     border-width: 5px;
     margin: 50px;
@@ -46,21 +41,19 @@
   }
   
   .card header {
-    padding: 20px;
+    padding: 10px;
     background: #5aa2e5;
     color: #fff;
   }
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+ 
+  /* gradient for contact box */
   .linear-gradient-background {
     background-image: linear-gradient(
-      rgba(0, 89, 255, 0.802) 0%,
+      rgb(0, 89, 255) 0%,
       rgba(0, 132, 255, 0.6) 100%
     );
   }
+  /* aside for contact box */
   .aside {
     float: left;
     margin: 50px;
@@ -72,35 +65,48 @@
     border-style: dashed;
     border-width: 5px;
   }
-  .Headshot img{
-    position: absolute; right: 470px;
+  p{
+    position: relative;
+    /* flex-wrap: wrap; */
+    /* padding-right: 10px; */
+    padding-right: 250px;
+  }
+  /* Individual classes for each picture included */
+    .Headshot img{
+    position: relative; left: 500px;
     width: 200px;
     height: 320px;
-    text-align: right;
-    padding: 10px;
+    /* text-align: right; */
+    /* padding: 10px; */
+    max-width: 100%;
+    float: right
+    /* align-items: center; */
   }
-p{
-  position: relative;
-  flex-wrap: wrap;
-  
-}
-.Twitterpic img{
+    .Twitterpic img{
   position: relative;
   width: 100px;
   height: 100px;
+  max-width: 100%;
+  align-items: center;
 }
-.Linkedinpic img{
+    .Linkedinpic img{
   position: relative;
-  width: 170px;
-  height: 100px;
+  width: 100px;
+  height: 90px;
+  max-width: 100%;
+  align-items: center;
 }
-.Emailpic img{
+    .Emailpic img{
   position: relative;
   width: 100px;
   height: 100px;
+  max-width: 100%;
+  align-items: center;
 }
-  .Phonepic img{
+    .Phonepic img{
     position: relative;
     width: 100px;
     height: 100px;
+    max-width: 100%;
+    align-items: center;
   }
